@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+body{
+    color: #ffffff;
+    background-color: #212121;
+    font-family: "Raleway", "sans-serif";
+}
+
+.SubjectBar{
+    background-color: #b02727;
+
+    position: fixed;
+    text-align: center;
+    
+    top: 0px;
+    width: 100%;
+    height: 65px;
+
+    z-index: 10;
+}
+
+.SubjectButton{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+
+    top: 10px;
+
+    width: 200px;
+    height: 45px;
+
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.CurrentSubject{
+    background-color: #3f3f3f;
+    border-radius: 100px;
+}
+
+.AvailableSubject{
+    background-color: #b02727;
+    border-radius: 100px;
+}
+
+.DisplayTitle{
+    background-color: #3f3f3f;
+
+    clear: left;
+    text-align: center;
+    font-size: 40px;
+}
+
+#PersonalDisplay{
+    text-align: center;
+}
+
+#StudentDisplay{
+    text-align: center;
+}
+
+.DisplayBlock{
+    display: inline-block;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+@media screen and (max-width: 650px) {
+    .DisplayBlock {
+        display: inline-block;
+        box-sizing: border-box;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+*/
+
+.Project{
+    background-color: #3f3f3f;
+    display: block;
+    box-sizing: inherit;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.Title{
+    font-size: 30px;
+}
+
+.Date{
+    font-size: 20px;
+}
+
+.Tags{
+    text-align: center;
+    font-weight: bold;
+
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    border-radius: 10px;
+}
+
+.Tag_Unity{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #54de87b6;
+}
+
+.Tag_Unreal{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #e46295;
+}
+
+.Tag_CS{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #A2666F;
+}
+
+.Tag_CPP{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #F49390;
+}
+
+.Tag_BP{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #F45866;
+}
+
+.Tag_HTML{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #C45AB3;
+}
+
+.Tag_CSS{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #873EA9;
+}
+
+.Tag_Solo{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #548fde;
+}
+
+.Tag_Team{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #DEA354;
+
+}
+
+.Thumbnail{
+    height: 200px;
+    width: 252px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
