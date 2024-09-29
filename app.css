@@ -4,12 +4,12 @@
 }
 
 a{
-    color: #ffffff;
+    color: #e7e7e7;
     text-decoration: none;
 }
 
 body{
-    color: #ffffff;
+    color: #e7e7e7;
     background-color: #212121;
     font-family: "Raleway", "sans-serif";
 }
@@ -18,29 +18,32 @@ body{
     background-color: #b02727;
 
     position: fixed;
-    text-align: center;
     
     top: 0px;
     width: 100%;
-    height: 60px;
+    height: 80px;
 
-    z-index: 10;
+    z-index: 1;
+}
+
+.Subjects{
+    text-align: center;
 }
 
 .SubjectButton{
-
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     display: inline-block;
 
     top: 10px;
 
-    width: 120px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
 
-    font-size: 25px;
-    line-height: 40px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
 }
 
 .CurrentSubject{
@@ -57,13 +60,25 @@ body{
     background-color: #861e1e;
 
     position: fixed;
-    text-align: center;
-    
-    top: 60px;
-    width: 100%;
-    height: 40px;
 
-    z-index: 10;
+    top: 80px;
+    width: 100%;
+    height: 60px;
+
+    z-index: 1;
+}
+
+.LinkIcons{
+    text-align: center;
+    position: relative;
+}
+
+.Icon{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .DisplayTitle{
