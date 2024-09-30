@@ -96,7 +96,27 @@ body{
 
     .ContactBar {
         top: 60px;
+    }
+}
 
+
+@media screen and (max-width: 470px) {
+    .SubjectBar {
+        height: 85px;
+    }
+
+    .SubjectButton {
+        width: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        top: 5px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .ContactBar {
+        top: 85px;
     }
 }
 
