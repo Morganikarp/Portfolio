@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>ZenWare | Morgan Bowen </title>
+    <title>Blackjack | Morgan Bowen </title>
 
     <link href="../app.css" rel="styleSheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
@@ -18,30 +18,75 @@
 
 <body>
 
-    <div> <!-- Subject Bar Start -->
+    <div class="SubjectBar"> <!-- Subject Bar Start -->
+        
+        <div class="Subjects">
 
-        <div class="SubjectBar">
+            <a href="../index.html" target=_self title="To Home Page"> <!-- Home Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Home
+                </div>
+            </div>
+            </a> 
             
-            <div class="NameButton">
-                <a href="index.html" target=_self title="To Home Page">
-                    Morgan Bowen
+            <a href="../Projects.html" target=_self title="To Projects Page"> <!-- Projects Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Projects
+                </div>
+            </div>
+            </a>
+
+            <a href="../About.html" target=_self title="To About Page"> <!-- About Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    About
+                </div>
+            </div>
+            </a>
+
+            <a href="../Contact.html" target=_self title="To Contact Page"> <!-- Contact Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Contact
+                </div>
+            </div>
+            </a>
+            
+        </div>
+    
+    </div>
+
+    <div class="ContactBar"> <!-- Contact Bar Start -->
+            
+        <div class="LinkIcons">
+
+            <div class="Icon"> <!-- Github icon -->
+                <a href="https://github.com/Morganikarp" target=_self alt="My Github link">
+                <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
                 </a>
             </div>
 
-            <div class="ProjectsButton">
-                <a href="ProjectsPage.html" target=_self title="To Projects Page">
-                    Click for <b>Projects</b> Page
+            <div class="Icon"> <!-- Itch.io icon -->
+                <a href="https://feeling-morganic.itch.io" target=_self alt="My Itch.io link">
+                <img src="/Images/Misc/ItchLogo.png" height="40" alt="Itch.io" title="Itch.io">
+                </a>
+            </div>
+
+            <div class="Icon"> <!-- LinkedIn icon -->
+                <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_self alt="My LinkedIn link">
+                <img src="/Images/Misc/LinkedInLogo.png" height="40" alt="LinkedIn" title="LinkedIn">
                 </a>
             </div>
 
         </div>
 
-    </div> <!-- Subject Bar End -->
+    </div>
 
-    <h1><br><br>Blackjack</h1>
-
-    <h2>This is the Blackjack Page</h2>
-    ZenWare was made for a 2 week long game jam as part of my first year of university. Its based off of the WarioWare games, and features microgames that must be completed in quick succession. The microgames are presented inside of a mask, that will grow and shrink in time with the music as a visual indicator of how long left the player has to complete the micro game. It was made using Unity engine and C#. Alongside the programming and design, I also made all the art for the game. Aside from the music, it was made by me alone.
+    <!-- Content Start -->
+    
+    <br><br><br><br><br><br><br><br>
 
 </body>
 
