@@ -325,3 +325,12 @@ body{
     border-radius: 50%;
     overflow: hidden;
 }
+
+/* Contact page */
+.break{
+    margin-bottom: 10px;
+}
+
+li{
+    margin-left: 30px;
+}
