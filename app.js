@@ -13,3 +13,8 @@ function subjectHighlight(subject){
 function subjectBase(subject){
     subject.style.background = "#b02727";
 }
+
+const emailPreface = "mailto:";
+const emailPart1 = "MorganBow";
+const emailPart2 = "en10@hot";
+const emailPart3 = "mail.com";

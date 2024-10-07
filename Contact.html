@@ -91,10 +91,10 @@
             <div class="ContactText">
                 You can contact me via:
                 <ul>
-                    <li>My personal email: <a href="mailto:MorganBowen10@hotmail.com" target=_blank><b>MorganBowen10@hotmail.com</b></a></li>
-                    <li>My Github: <a href="https://github.com/Morganikarp" target=_blank><b>https://github.com/Morganikarp</b></a></li>
-                    <li>My Itch.io: <a href="https://morganbowen.itch.io" target=_blank><b>https://morganbowen.itch.io</b></a></li>
-                    <li>My Linkedin: <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_blank><b>https://www.linkedin.com/in/morgan-bowen-584ab5295</b></a></li>
+                    <li>My personal email is linked <a id="personalEmail" href="#" target=_blank><b>here</b></a></li>
+                    <li>My Github is linked <a href="https://github.com/Morganikarp" target=_blank><b>here</b></a></li>
+                    <li>My Itch.io is linked <a href="https://morganbowen.itch.io" target=_blank><b>here</b></a></li>
+                    <li>My Linkedin is linked <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_blank><b>here</b></a></li>
                 </ul>
             </div>
 
@@ -124,8 +124,13 @@
 
     </div> <!-- Content End -->
 
-</body>
+    <!-- JS Start -->
+    <script src="app.js"></script>
+    <script>
+        const email = document.getElementById('personalEmail');
+        email.href = emailPreface + emailPart1 + emailPart2 + emailPart3;
+    </script>
 
-<script src="app.js"></script>
+</body>
 
 </html>
