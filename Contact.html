@@ -91,10 +91,10 @@
             <div class="ContactText">
                 You can contact me via:
                 <ul>
-                    <li>My personal email is linked <a id="personalEmail" href="#" target=_blank><b>here</b></a></li>
-                    <li>My Github is linked <a href="https://github.com/Morganikarp" target=_blank><b>here</b></a></li>
-                    <li>My Itch.io is linked <a href="https://morganbowen.itch.io" target=_blank><b>here</b></a></li>
-                    <li>My Linkedin is linked <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_blank><b>here</b></a></li>
+                    <li>My personal email is <b><a id="personalEmail" href="" target=_blank></a></b></li>
+                    <li>My Github is linked <a href="https://github.com/Morganikarp" target=_blank><b>here</b></a> and below</li>
+                    <li>My Itch.io is linked <a href="https://morganbowen.itch.io" target=_blank><b>here</b></a> and below</li>
+                    <li>My Linkedin is linked <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_blank><b>here</b> and below</a></li>
                 </ul>
             </div>
 
@@ -128,7 +128,8 @@
     <script src="app.js"></script>
     <script>
         const email = document.getElementById('personalEmail');
-        email.href = emailPreface + emailPart1 + emailPart2 + emailPart3;
+        email.textContent = emailPart1 + emailPart2 + emailPart3
+        email.href = emailPreface + email.textContent;
     </script>
 
 </body>
