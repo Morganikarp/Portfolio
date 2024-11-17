@@ -15,6 +15,6 @@ function subjectBase(subject){
 }
 
 const emailPreface = "mailto:";
-const emailPart1 = "MorganBow";
-const emailPart2 = "en10@hot";
-const emailPart3 = "mail.com";
+const emailPart1 = "morg";
+const emailPart2 = "anb.de";
+const emailPart3 = "v@gmail.com";
