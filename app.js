@@ -14,7 +14,12 @@ function subjectBase(subject){
     subject.style.background = "#b02727";
 }
 
+//const emailPreface = "mailto:";
+//const emailPart1 = "morg";
+//const emailPart2 = "anb.de";
+//const emailPart3 = "v@gmail.com";
+
 const emailPreface = "mailto:";
 const emailPart1 = "morg";
-const emailPart2 = "anb.de";
-const emailPart3 = "v@gmail.com";
+const emailPart2 = "anbowen10@h";
+const emailPart3 = "otmail.com";
