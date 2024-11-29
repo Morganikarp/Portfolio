@@ -130,6 +130,10 @@ body{
     font-size: 35px;
 }
 
+#OngoingDisplay{
+    text-align: center;
+}
+
 #PersonalDisplay{
     text-align: center;
 }
@@ -200,7 +204,7 @@ body{
     padding: inherit;
 
     border-radius: inherit;
-    background-color: #A2666F;
+    background-color: #705055;
 }
 
 .Tag_CPP{
@@ -208,7 +212,7 @@ body{
     padding: inherit;
 
     border-radius: inherit;
-    background-color: #F49390;
+    background-color: #c47270;
 }
 
 .Tag_BP{
@@ -248,7 +252,16 @@ body{
     padding: inherit;
 
     border-radius: inherit;
-    background-color: #DEA354;
+    background-color: #c78c3f;
+
+}
+
+.Tag_Client{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #657a2c;
 
 }
 
