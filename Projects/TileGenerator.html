@@ -147,13 +147,29 @@
         <div class="ProjectDescription"> <!-- Current Task -->
             
             <div class="ProjectSectionTitle">
-                <b>Current Task:</b> (Proto) Tile Saving and Loading
+                <b>Current Task:</b> (Proto) Tile Loading
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li>Of the 2 different export methods, saving and loading a tile to/from a data file currently seems the most feasible to prototype.</li>
-                    <li>My immediate actions with be to research what tools Unreal has for file manipulation, and possible file formats (.XML, .CSV).</li>
+                    <li>As part of creating a function for saving tiles as a .csv file, I have established a "method" for how tile data is recorded.</li>
+                    <li>Now that I have this set, I can work on creating a function that can read a saved tile by understanding this structure.</li>
+                    <li>To start though, I will research methods for allowing a user to select a specific file.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution 3 -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> (Proto) Tile Saving
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, the function can create a .csv file, save it to a hardcoded location, and write into it the mesh's hex complexity, and the Z position of all vertices that aren't still at 0.</li>
+                    <li><b>Developing this prototype further</b>, I will have to continuously update the data written to the save files over time. This is because as more tools for the project are created, there will be more "attributes" of the tile that would need saving.</li>
                 </ul>
             </div>
 
@@ -162,17 +178,20 @@
         <div class="ProjectDescription"> <!-- Contribution 2 -->
             
             <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Terrain Creation Tool
+                <b>Contribution:</b> (Proto) Terrain Creation Tools
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li><b>In its current state</b>, this tool can raise or lower any vertex on the hexagonal mesh.</li>
-                    <li><b>Developing this prototype further</b>, the designer and I have agreed that this tool should act more like a brush, instead of only affecting a single vertex at a time. The functions can also be optimised greatly.</li>
-                    <li>The image below is an example of what can currently be made with the tool, and the Vimeo video demonstrates the tool during runtime.</li>
+                    <li><b>In their current states</b>, they can both manipulate the hexagonal mesh. One is for targeting single specific vertices, and the other can manipulate multiple at once (more brush-like).</li>
+                    <li><b>Developing this prototype further</b>, the designer and I are discussing ways of giving the user more control over the "shape" of the brush tool. A "clamp" function can also be made for creating flat areas. The pre-existing functions can also be optimised greatly.</li>
+                    <li>The video below demonstrates both the vertex and brush tools during runtime.</li>
                 </ul>
             </div>
 
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1036440703?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Terrain Creation Tools Demonstration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            
+            <!--
             <div class="ProjectLinks">
 
                 <div class="Link">
@@ -182,14 +201,17 @@
                 </div>
                 
             </div>
+            -->
 
         </div>
 
+        <!--
         <div class="Gallery">
             <div class="Image">
                 <img src="/Images/TileGenerator/Gal1.png" width="500">
             </div>
         </div>
+        -->
 
         <div class="ProjectDescription"> <!-- Contribution 1 -->
             
@@ -205,12 +227,12 @@
                 </ul>
             </div>
 
-        </div>
-
-        <div class="Gallery">
-            <div class="Image">
-                <img src="/Images/TileGenerator/Gal2.png" width="600">
+            <div class="Gallery">
+                <div class="Image">
+                    <img src="/Images/TileGenerator/Gal2.png" width="600">
+                </div>
             </div>
+
         </div>
 
         <div class="ProjectDescription">  <!-- Links -->

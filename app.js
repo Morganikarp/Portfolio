@@ -21,5 +21,5 @@ function subjectBase(subject){
 
 const emailPreface = "mailto:";
 const emailPart1 = "morg";
-const emailPart2 = "anbowen10@h";
-const emailPart3 = "otmail.com";
+const emailPart2 = "anb.dev@g";
+const emailPart3 = "mail.com";
