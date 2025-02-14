@@ -147,29 +147,14 @@
         <div class="ProjectDescription"> <!-- Current Task -->
             
             <div class="ProjectSectionTitle">
-                <b>Current Task:</b> (Proto) Tile Loading
+                <b>Current Task:</b> (Proto) Path Tool
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li>As part of creating a function for saving tiles as a .csv file, I have established a "method" for how tile data is recorded.</li>
-                    <li>Now that I have this set, I can work on creating a function that can read a saved tile by understanding this structure.</li>
-                    <li>To start though, I will research methods for allowing a user to select a specific file.</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="ProjectDescription"> <!-- Contribution 3 -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Tile Saving
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>In its current state</b>, the function can create a .csv file, save it to a hardcoded location, and write into it the mesh's hex complexity, and the Z position of all vertices that aren't still at 0.</li>
-                    <li><b>Developing this prototype further</b>, I will have to continuously update the data written to the save files over time. This is because as more tools for the project are created, there will be more "attributes" of the tile that would need saving.</li>
+                    <li>I have been asked to create a tool that allows the user to select a position on the tile, and draw a path across it.</li>
+                    <li>The major technical challenge of this task will be finding a way for the path to bend to the mesh terrain, which can be altered.</li>
+                    <li>I believe that the spline component in Unreal should be a suitable solution, but using it will require further research.</li>
                 </ul>
             </div>
 
@@ -178,18 +163,19 @@
         <div class="ProjectDescription"> <!-- Contribution 2 -->
             
             <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Terrain Creation Tools
+                <b>Contribution:</b> (Proto) Terrain Manipulation Tools
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li><b>In their current states</b>, they can both manipulate the hexagonal mesh. One is for targeting single specific vertices, and the other can manipulate multiple at once (more brush-like).</li>
-                    <li><b>Developing this prototype further</b>, the designer and I are discussing ways of giving the user more control over the "shape" of the brush tool. A "clamp" function can also be made for creating flat areas. The pre-existing functions can also be optimised greatly.</li>
-                    <li>The video below demonstrates both the vertex and brush tools during runtime.</li>
+                    <li><b>The current terrain tools are:</b><br><b>Brush tool:</b> Raises or lowers a group of vertices concurrently.<br><b>Vertex tool:</b> Raises and lowers a single vertex.<br>
+                    <b>Noise tool:</b> Randomly raises and lowers a group of vertices concurrently.<br><b>Flatten tool:</b> Sets the height of a group of vertices to be equal (either the height of the highest or lowest vertex, or the mean of all selected vertices).<br></li>
+                    <li><b>Developing this prototype further</b>, optimising the tools would help greatly, as performance can suffer when working with a larger mesh.</li>
+                    <li>The video below demonstrates both the terrain tools during runtime.</li>
                 </ul>
             </div>
 
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1036440703?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Terrain Creation Tools Demonstration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056637307?h=428e8ae695&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="terrainTools_v2 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             
             <!--
             <div class="ProjectLinks">
@@ -205,14 +191,6 @@
 
         </div>
 
-        <!--
-        <div class="Gallery">
-            <div class="Image">
-                <img src="/Images/TileGenerator/Gal1.png" width="500">
-            </div>
-        </div>
-        -->
-
         <div class="ProjectDescription"> <!-- Contribution 1 -->
             
             <div class="ProjectSectionTitle">
@@ -221,13 +199,60 @@
 
             <div class="ProjectText">
                 <ul>
-                    <li><b>In its current state</b>, this tool can procedurally generate a hexagonal mesh of any size or "complexity".
+                    <li><b>In its current state</b>, this tool can procedurally generate a hexagonal mesh of any size and "complexity". It can also take a given padding value, and create of list of mesh vertices that are on the edge of the hexagon.
                     <li><b>Developing this prototype further</b>, I would like to optimise the code to make generation more efficient. I would also like to create a function that allows the user to change complexity during runtime.</li>
-                    <li>In the image below, you can see the rendered mesh of a "complexity 3" hexagon on the left, and its procedurally generated vertices on the right.</li>
+                    <li>The video below demonstrates the mesh being generated at different complexities, and how edge padding can be useful in tile Creation.</li>
                 </ul>
             </div>
 
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056625983?h=840fe33f3f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Procedural Mesh Generator V1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
         </div>
+
+        <div class="ProjectDescription"> <!-- Contribution 4 -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Terrain and Object Communication
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, placed objects can move with the terrain below them, rotate to always be flush with the floor, and select buildings can create a plateau beneath them.</li>
+                    <li><b>Developing this further</b>, I want to find a way to procedurally determine the size of the area flattened when an object is placed based on the placed objects size.</li>
+                    <li>The video below demonstates object adjust to the terrain live, and objects creating flat areas beneath them when placed.</li>
+                </ul>
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056631471?h=47a8bedee4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="terrainObjectCom_v1 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution 3 -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> (Proto) Tile Saving
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, the function can create a .csv file, save it to a hardcoded location, and write into it the mesh's hex complexity, and the Z position of all vertices that aren't still at 0.</li>
+                    <li><b>Developing this prototype further</b>, I will have to continuously update the data written to the save files over time. This is because as more tools for the project are created, there will be more "attributes" of the tile that would need saving. 
+                    I will also need to develop a way of reading the save files, and recreating tiles based on a save file.</li>
+                    <li>The video below demonstates saving a tile, and what a save file looks like.</li>
+                </ul>
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056621596?h=158e3cc445&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Tile Saving V1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>
+
+        <!--
+        <div class="Gallery">
+            <div class="Image">
+                <img src="/Images/TileGenerator/Gal1.png" width="500">
+            </div>
+        </div>
+        -->
 
         <!--
         <div class="Gallery">
