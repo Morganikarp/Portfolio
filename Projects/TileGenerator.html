@@ -121,7 +121,7 @@
             </div>
 
             <div class="ProjectText">
-                The Hexton Hills Tile Generator is in development as a group client project for my final year of university.
+                The Hexton Hills Tile Generator is in development as a group client project for my final year of university. I specifically have been working on procedural tools for creating and manipulating tiles.
                 It is being made in Unreal with C++.
                 <br><br>The client is <u><a href="https://www.hextonhills.com/" target=_blank alt="Graven Guild">Graven Guild</a></u>, and they have requested us to develop a program that allows a user to create a hexagonal tile, decorate it in a variety of ways, and export either the tile data, or the tile mesh for 3D printing.
             </div>
@@ -147,20 +147,32 @@
         <div class="ProjectDescription"> <!-- Current Task -->
             
             <div class="ProjectSectionTitle">
-                <b>Current Task:</b> (Proto) Path Tool
+                <b>Current Task:</b> (Proto) Stamp Tool
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li>I have been asked to create a tool that allows the user to select a position on the tile, and draw a path across it.</li>
-                    <li>The major technical challenge of this task will be finding a way for the path to bend to the mesh terrain, which can be altered.</li>
-                    <li>I believe that the spline component in Unreal should be a suitable solution, but using it will require further research.</li>
+                    <li>I have been working on a new terrain tool that will take image data from height map, and superimpose it onto the tile mesh to create naturalistic terrain.</li>
+                    <li>Currently, my work allows for a the user to group a number of .png images into a directory, which allows the stamp tool to randomly pick one and save it as a Unreal data type.</li>
+                    <li>Going forward, I need to continue work on the actual superimposing of image data onto the mesh. I am stuck on the last step, that being this step. Pictured below are images taken of the tile with superimposed heightmaps during runtime. </li>
                 </ul>
+            </div>
+
+            <div class="ProjectLinks">
+
+                <div class="Link">
+                    <img src="/Images/TileGenerator/StampToolDev.png" height="300">
+                </div>
+                
+                <div class="Link">
+                    <img src="/Images/TileGenerator/StampToolDev1.png" height="300">
+                </div>
+
             </div>
 
         </div>
 
-        <div class="ProjectDescription"> <!-- Contribution 2 -->
+        <div class="ProjectDescription"> <!-- Contribution -->
             
             <div class="ProjectSectionTitle">
                 <b>Contribution:</b> (Proto) Terrain Manipulation Tools
@@ -193,7 +205,7 @@
 
         </div>
 
-        <div class="ProjectDescription"> <!-- Contribution 1 -->
+        <div class="ProjectDescription"> <!-- Contribution -->
             
             <div class="ProjectSectionTitle">
                 <b>Contribution:</b> (Proto) Procedural Mesh Generator
@@ -225,7 +237,23 @@
             
         </div>
 
-        <div class="ProjectDescription"> <!-- Contribution 4 -->
+        <div class="ProjectDescription"> <!-- Contribution -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Spline Path Tools
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, you can use the spline tool to create, cut off, and add onto splines. The splines points themselves can update this position based on the mesh.</li>
+                    <li><b>You can also use the spline selection tool to click and drag the major spline points to new positions.</li>
+                    <li><b>Developing this further</b>, I want to be able to delete and merge spline points, and I want to use Unreal Engines PCG tools to stretch a path mesh over the spline, and have that adapt during runtime.</li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution -->
             
             <div class="ProjectSectionTitle">
                 <b>Contribution:</b> Terrain and Object Communication
@@ -243,7 +271,7 @@
         
         </div>
 
-        <div class="ProjectDescription"> <!-- Contribution 3 -->
+        <div class="ProjectDescription"> <!-- Contribution -->
             
             <div class="ProjectSectionTitle">
                 <b>Contribution:</b> (Proto) Tile Saving
