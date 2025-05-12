@@ -92,7 +92,7 @@
             Hexton Hills Tile Generator
 
             <div class="ProjectDate">
-                Ongoing
+                October 2024 - April 2025
             </div>
 
             <div class="Tags">
@@ -108,22 +108,6 @@
                 <div class="Tag_Team">
                     Team
                 </div>
-            </div>
-
-        </div>
-
-        </div>
-
-        <div class="ProjectDescription"> <!-- Project description -->
-            
-            <div class="ProjectSectionTitle">
-                Project Description
-            </div>
-
-            <div class="ProjectText">
-                The Hexton Hills Tile Generator is in development as a group client project for my final year of university. I specifically have been working on procedural tools for creating and manipulating tiles.
-                It is being made in Unreal with C++.
-                <br><br>The client is <u><a href="https://www.hextonhills.com/" target=_blank alt="Graven Guild">Graven Guild</a></u>, and they have requested us to develop a program that allows a user to create a hexagonal tile, decorate it in a variety of ways, and export either the tile data, or the tile mesh for 3D printing.
             </div>
 
         </div>
@@ -144,17 +128,220 @@
 
         </div>
 
-        <div class="ProjectDescription"> <!-- Current Task -->
+        <div class="ProjectDescription"> <!-- Noteworthy Contributions -->
             
             <div class="ProjectSectionTitle">
-                <b>Current Task:</b> (Proto) Stamp Tool
+                Noteworthy Contributions
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li>I have been working on a new terrain tool that will take image data from height map, and superimpose it onto the tile mesh to create naturalistic terrain.</li>
-                    <li>Currently, my work allows for a the user to group a number of .png images into a directory, which allows the stamp tool to randomly pick one and save it as a Unreal data type.</li>
-                    <li>Going forward, I need to continue work on the actual superimposing of image data onto the mesh. I am stuck on the last step, that being this step. Pictured below are images taken of the tile with superimposed heightmaps during runtime. </li>
+                    <li>I developed the <b>terrain manipulation</b> and <b>spline path</b> tools.</li>
+                    <li>To enable the terrain manipulation, I also programmed a function that generates a <b>procerdural mesh</b> of any number of subdivisions.</li>
+                    <li>I developed a method for saving a created tile as a <b>.csv file</b>, as well as a method for importing a tile by reading the data within a given .csv.</li>
+                    <li>I developed methods that allowed the terrain mesh and objects placed in the tile to interact.</li>
+                    <li>I worked on integrating many of the <b>UI</b> elements with their associated functions, as well finalising the main menu.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Developed Skills -->
+            
+            <div class="ProjectSectionTitle">
+                Developed Skills
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li>This was my largest project to date using <b>Unreal engine</b>, and I have definitely improved with the softwares tools, and <b>C++</b>.</li>
+                    <li>Working with a <b>team</b> was a valuable experience regarding collaboration with other roles and utilisation of tools, such as <b>Jira</b> and <b>Perforce</b>.</li>
+                    <li>Understanding a <b>clients requirements</b> and adapting to feedback allowed me develop my client interaction skills.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Project description -->
+            
+            <div class="ProjectSectionTitle">
+                Project Description
+            </div>
+
+            <div class="ProjectText">
+                The Hexton Hills Tile Generator was developed as a group client project for my final year of university. I was personally developing procedural tools for creating and manipulating tiles.
+                It was made using Unreal with C++.
+                <br><br>The client was <u><a href="https://www.hextonhills.com/" target=_blank alt="Graven Guild">Graven Guild</a></u>. They requested us to develop a program that allowed a user to create a hexagonal tile, decorate it in a variety of ways, and export either the tile data for sharing, or the tile mesh for 3D printing.
+            </div>
+
+        </div>
+    
+        <div class="ProjectDescription"> <!-- Contribution terrain manip -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Terrain Manipulation Tools
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1082514095?h=effc80a2de&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Terrain Tools V3"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            
+            <div class="ProjectText">
+                <ul>
+                    <li><b>The terrain tools I developed were:</b><br><b>Brush tool:</b> Raises or lowers a group of vertices concurrently.<br><b>Vertex tool:</b> Raises and lowers a single vertex.<br>
+                    <b>Noise tool:</b> Randomly raises and lowers a group of vertices concurrently.<br><b>Flatten tool:</b> Averages and sets the height of a group of vertices.<br></li>
+                    <li>I also programmed clamps that stop vertices from going any higher or lower than their current height when applied.</li>
+                    <li><b>Developing this further</b>, I would have liked to have optimised the tools that deal with a group of vertices, as performance can suffer when working with high complexity mesh.</li>
+                </ul>
+            </div>
+
+            <div class="ProjectSectionTitle">
+                Click the icon below to view the tool code:
+            </div>
+
+            <div class="ProjectLinks">
+
+                <div class="Link">
+                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/Proto%20Terrain%20Creation%20Tool/TerrainCreationFunctions_v4.cpp" target=_blank alt="Github link">
+                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution spline -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Spline Path Tools
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1083259584?h=dfbc14b047&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Spline Path Tools V2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            
+            <div class="ProjectText">
+                <ul>
+                    <li><b>The path tools I developed were:</b><br><b>Add point:</b> Creates a new path at a point, or adds onto a pre-existing path.<br><b>Select point:</b> Grabs a nearby major spline point and moves it, as well as the connected edges.
+                        <br><b>Delete point:</b> Deletes a nearby major spline point and connected edge if it is on an end of the path.<br><b>Delete path:</b> Deletes the entire spline path associated with a nearby major spline point.</li>
+                    <li>Additionally, the spline will automatically segment itself into a number of points, so that it can bend with the terrain with varying terrain.</li>
+                    <li>The spline also has a number of mesh components across it, connecting each spline point to create a solid model across the entire length.</li>
+                    <li><b>Developing this further</b>, I would have liked to have developed procedural functionality that updated the spline mesh based on external conditions, such as an intersecting path, or nearby object.</li>
+                </ul>
+            </div>
+
+            <div class="ProjectSectionTitle">
+                Click the icon below to view Blueprint code:
+            </div>
+
+            <div class="ProjectLinks">
+
+                <div class="Link">
+                    <a href="Blueprints/TileGenerator.html" alt="Blueprint link">
+                    <img src="/Images/Misc/UnrealLogo.png" height="40" alt="Blueprints" title="Blueprints">
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution proc mesh gen-->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Procedural Mesh Generator
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1082517431?h=a181bbfc23&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Procedural Mesh Generator"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, this tool can procedurally generate a hexagonal mesh of any size and "complexity".</li>
+                    <li>It can also take a given padding value, and create of list of mesh vertices that are on the tile edge that cannot be manipulated</li>
+                    <li><b>Developing this further</b>, the code could definitely be optimised. During development I didn't have much time for optimisation, thus I had to accept its state as long as it worked. I would have also wished to develop a function that allows the user to change complexity during runtime.</li>
+                </ul>
+            </div>
+
+            <div class="ProjectSectionTitle">
+                Click the icon below to view the generator code:
+            </div>
+
+            <div class="ProjectLinks">
+
+                <div class="Link">
+                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/Procedural%20Mesh%20Generator/MeshGenerator_v3.cpp" target=_blank alt="Github link">
+                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution terrain obj comm -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Terrain and Object Communication
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056631471?h=47a8bedee4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="terrainObjectCom_v1 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, placed objects can move with the terrain below them, and be toggled to rotate to always be flush with the floor or not.</li>
+                    <li>Buildings placed in a specific way also create plateau's beneath them, shaping the terrain.</li>
+                    <li><b>Developing this further</b>, It would make sense to procedurally determine the size of the created plateau based on the size of a place object.</li>                </ul>
+            </div>
+        
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution saving/importing-->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> File Manipulation
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1083297541?h=a24115b670&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="File Manipulation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            
+            <div class="ProjectText">
+                <ul>
+                    <li><b>In its current state</b>, the user can save all essential data about a tile to a .csv, and on a name and location for local storage.</li>
+                    <li>These .csv files can also be imported to recreate the tile based on the data that has been recorded.</li>
+                    <li><b>Developing this prototype further</b>, it would be interesting to find more efficient ways of abstracting the save data for recording.</li>
+                </ul>
+            </div>
+
+            <div class="ProjectSectionTitle">
+                Click the icons below to view the C++ and Blueprint code:
+            </div>
+
+            <div class="ProjectLinks">
+
+                <div class="Link">
+                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/File%20Manipulation/SaveAndImportFunctions.cpp" target=_blank alt="Github link">
+                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
+                    </a>
+                </div>
+
+                <div class="Link">
+                    <a href="Blueprints/TileGenerator.html" alt="Blueprint link">
+                    <img src="/Images/Misc/UnrealLogo.png" height="40" alt="Blueprints" title="Blueprints">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="ProjectDescription"> <!-- Contribution stamp -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Contribution:</b> Stamp Tool (partially complete)
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li>Near the end of the project, I was working on a new terrain tool that would take image data from a heightmap, and apply it onto the tile mesh to create naturalistic terrain.</li>
+                    <li>It could select a random image from a collection of .png files (from a selected directory), access it's pixel data, and apply it to the tile to create various terrain patterns.</li>
+                    <li>This feature was unfinished, as I could not complete the work needed to translate laying a rectangular image over the hexagonal tile.</li>
+                    <li>Regardless, working on this feature was a good opportunity to practice file manipulation and utilising image data.</li>
+                    <li>Below are images from the development of this tool. It shows image data being applied to the terrain, but in a disorganised fashion.</li>
                 </ul>
             </div>
 
@@ -170,178 +357,7 @@
 
             </div>
         
-
         </div>
-    
-        <div class="ProjectDescription"> <!-- Contribution -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Terrain Manipulation Tools
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>The current terrain tools are:</b><br><b>Brush tool:</b> Raises or lowers a group of vertices concurrently.<br><b>Vertex tool:</b> Raises and lowers a single vertex.<br>
-                    <b>Noise tool:</b> Randomly raises and lowers a group of vertices concurrently.<br><b>Flatten tool:</b> Sets the height of a group of vertices to be equal (either the height of the highest or lowest vertex, or the mean of all selected vertices).<br></li>
-                    <li><b>Developing this prototype further</b>, optimising the tools would help greatly, as performance can suffer when working with a larger mesh.</li>
-                    <li>The video below demonstrates both the terrain tools during runtime.</li>
-                </ul>
-            </div>
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056637307?h=428e8ae695&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="terrainTools_v2 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-            <div class="ProjectSectionTitle">
-                Click the icon below to view the tool code:
-            </div>
-
-            <div class="ProjectLinks">
-
-                <div class="Link">
-                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/Proto%20Terrain%20Creation%20Tool/TerrainCreationFunctions_v3.cpp" target=_blank alt="Github link">
-                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
-                    </a>
-                </div>
-                
-            </div>
-
-        </div>
-
-        <div class="ProjectDescription"> <!-- Contribution -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Procedural Mesh Generator
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>In its current state</b>, this tool can procedurally generate a hexagonal mesh of any size and "complexity". It can also take a given padding value, and create of list of mesh vertices that are on the edge of the hexagon.
-                    <li><b>Developing this prototype further</b>, I would like to optimise the code to make generation more efficient. I would also like to create a function that allows the user to change complexity during runtime.</li>
-                    <li>The video below demonstrates the mesh being generated at different complexities, and how edge padding can be useful in tile Creation.</li>
-                </ul>
-            </div>
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056625983?h=840fe33f3f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Procedural Mesh Generator V1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-            <div class="ProjectSectionTitle">
-                Click the icon below to view the generator code:
-            </div>
-
-            <div class="ProjectLinks">
-
-                <div class="Link">
-                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/Proto%20Procedural%20Mesh%20Generator/MeshGenerator_v2.cpp" target=_blank alt="Github link">
-                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
-                    </a>
-                </div>
-                
-            </div>
-            
-        </div>
-
-        <div class="ProjectDescription"> <!-- Contribution -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> Spline Path Tools
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>In its current state</b>, you can use the spline tool to create, cut off, and add onto splines. The splines points themselves can update this position based on the mesh.</li>
-                    <li>You can also use the spline selection tool to click and drag the major spline points to new positions.</li>
-                    <li><b>Developing this further</b>, I want to be able to delete and merge spline points, and I want to use Unreal Engines PCG tools to stretch a path mesh over the spline, and have that adapt during runtime.</li>
-                    <li>This video demonstrates the path current capabilities.</li>
-                </ul>
-            </div>
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1062331901?h=8dedc3ea8c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="splinePathTools_v1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-        </div>
-
-        <div class="ProjectDescription"> <!-- Contribution -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> Terrain and Object Communication
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>In its current state</b>, placed objects can move with the terrain below them, rotate to always be flush with the floor, and select buildings can create a plateau beneath them.</li>
-                    <li><b>Developing this further</b>, I want to find a way to procedurally determine the size of the area flattened when an object is placed based on the placed objects size.</li>
-                    <li>The video below demonstates object adjust to the terrain live, and objects creating flat areas beneath them when placed.</li>
-                </ul>
-            </div>
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056631471?h=47a8bedee4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="terrainObjectCom_v1 video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        
-        </div>
-
-        <div class="ProjectDescription"> <!-- Contribution -->
-            
-            <div class="ProjectSectionTitle">
-                <b>Contribution:</b> (Proto) Tile Saving
-            </div>
-
-            <div class="ProjectText">
-                <ul>
-                    <li><b>In its current state</b>, the function can create a .csv file, save it to a hardcoded location, and write into it the mesh's hex complexity, and the Z position of all vertices that aren't still at 0.</li>
-                    <li><b>Developing this prototype further</b>, I will have to continuously update the data written to the save files over time. This is because as more tools for the project are created, there will be more "attributes" of the tile that would need saving. 
-                    I will also need to develop a way of reading the save files, and recreating tiles based on a save file.</li>
-                    <li>The video below demonstates saving a tile, and what a save file looks like.</li>
-                </ul>
-            </div>
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1056621596?h=158e3cc445&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="(Proto) Tile Saving V1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-            <div class="ProjectSectionTitle">
-                Click the icon below to view the function code:
-            </div>
-
-            <div class="ProjectLinks">
-
-                <div class="Link">
-                    <a href="https://github.com/Morganikarp/HHTGwork/blob/main/Proto%20Save%20Tile/SaveTileFunction_v1.cpp" target=_blank alt="Github link">
-                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-
-        <!--
-        <div class="Gallery">
-            <div class="Image">
-                <img src="/Images/TileGenerator/Gal1.png" width="500">
-            </div>
-        </div>
-        -->
-
-        <!--
-        <div class="Gallery">
-            <div class="Image">
-                <img src="/Images/TileGenerator/Gal2.png" width="600">
-            </div>
-        </div>
-        -->
-
-        <!--
-        <div class="ProjectDescription">  <!- Links ->
-            
-            <div class="ProjectSectionTitle">
-                View the code from my contributions on Github:
-            </div>
-
-            <div class="ProjectLinks">
-
-                <div class="Link">
-                    <a href="https://github.com/Morganikarp/HHTGwork" target=_blank alt="Github link">
-                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
-                    </a>
-                </div>
-                
-            </div>
-
-        </div>
-        -->
 
     </div> <!-- Content End -->
 

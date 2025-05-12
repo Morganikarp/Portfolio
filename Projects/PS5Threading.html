@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Heavy Lies the Crown | Morgan Bowen </title>
+
+    <link href="../app.css?version=7" rel="styleSheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Morgan Bowen">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="UTF-8"> 
+    
+</head>
+
+<body>
+
+    <div class="SubjectBar"> <!-- Subject Bar Start -->
+        
+        <div class="Subjects">
+            
+            <a href="../index.html" target=_self title="To Home Page"> <!-- Home Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Home
+                </div>
+            </div>
+            </a>
+
+            <a href="../Projects.html" target=_self title="To Projects Page"> <!-- Projects Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Projects
+                </div>
+            </div>
+            </a>
+
+            <a href="../About.html" target=_self title="To About Page"> <!-- About Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    About
+                </div>
+            </div>
+            </a>
+
+            <a href="../Contact.html" target=_self title="To Contact Page"> <!-- Contact Subject -->
+            <div class="SubjectButton">
+                <div class="AvailableSubject" onmouseover="subjectHighlight(this)" onmouseout="subjectBase(this)">
+                    Contact
+                </div>
+            </div>
+            </a>
+            
+        </div>
+    
+    </div>
+
+    <div class="ContactBar"> <!-- Contact Bar Start -->
+            
+        <div class="LinkIcons">
+
+            <div class="Icon"> <!-- Github icon -->
+                <a href="https://github.com/Morganikarp" target=_blank alt="My Github link">
+                <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
+                </a>
+            </div>
+
+            <div class="Icon"> <!-- Itch.io icon -->
+                <a href="https://feeling-morganic.itch.io" target=_blank alt="My Itch.io link">
+                <img src="/Images/Misc/ItchLogo.png" height="40" alt="Itch.io" title="Itch.io">
+                </a>
+            </div>
+
+            <div class="Icon"> <!-- LinkedIn icon -->
+                <a href="https://www.linkedin.com/in/morgan-bowen-584ab5295" target=_blank alt="My LinkedIn link">
+                <img src="/Images/Misc/LinkedInLogo.png" height="40" alt="LinkedIn" title="LinkedIn">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <br><br><br><br><br><br><br><br>
+
+    <div class="ProjectContent"> <!-- Content Start -->
+            
+        <div class="ProjectTitle">
+            PS5 Threading Demo
+
+            <div class="ProjectDate">
+                January - April 2025
+            </div>
+
+            <div class="Tags">
+                <div class="Tag_PS5">
+                    PS5
+                </div>
+                <div class="Tag_CPP">
+                    C++
+                </div>
+                <div class="Tag_Solo">
+                    Solo
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Project description -->
+            
+            <div class="ProjectSectionTitle">
+                Project Description
+            </div>
+
+            <div class="ProjectText">
+                For a university project, I am using a PS5 demo kit to create a small demonstration of what makes the console unique.
+                Specifically, I have decided to explore the PS5's multithreading capabilities by using the consoles many cores.
+                Additionally, I want to include the unique features of the PS5 controller as minor mechanics.
+                <br><br>
+                Due to an NDA, I cannot expand on some aspects of this project in great detail, but I will still attempt to record my development in some fashion.
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Project Demands -->
+            
+            <div class="ProjectSectionTitle">
+                Project Demands
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li><b>Developing</b> a program with few high level "layers", with my scripting interacting directly with the PS5 hardware.</li>
+                    <li><b>Understanding</b> industry level documentation detailing the workings of a modern commerical console.</li>
+                    <li><b>Developing</b> tools which take advantage of technology that is unique to the PS5.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="ProjectDescription"> <!-- Current Task -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Current Task:</b> Sharing load across multiple cores
+            </div>
+
+            <div class="ProjectText">
+                I am using image rendering as a method of placing strain on the PS5 hardware. 
+                I have managed to place the place the function of rendering over 5000 images onto a thread, which I can assign to any core that I deem appropriate. 
+                Now, I am looking to divide the task in two so I can render half the images on one core, and the other half on another.
+                In doing this, I can attempt to find the most efficient method of performing heavy tasks by using multithreading.
+            </div>
+
+        </div>
+        
+    </div> <!-- Content End -->
+
+</body>
+
+<script src="../app.js"></script>
+
+</html>

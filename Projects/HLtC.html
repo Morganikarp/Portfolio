@@ -100,7 +100,7 @@
             Heavy Lies the Crown
 
             <div class="ProjectDate">
-                Ongoing
+                January - April 2025
             </div>
 
             <div class="Tags">
@@ -113,24 +113,9 @@
                 <div class="Tag_CPP">
                     C++
                 </div>
-                <div class="Tag_Team">
-                    Team
+                <div class="Tag_Solo">
+                    Solo
                 </div>
-            </div>
-
-        </div>
-
-        <div class="ProjectDescription"> <!-- Project description -->
-            
-            <div class="ProjectSectionTitle">
-                Project Description
-            </div>
-
-            <div class="ProjectText">
-                Heavy Lies the Crown is a roguelike adventure game being developed and produced by Port in the Storm, my university's in-house studio. 
-                I joined this project so I may use it as the subject of my final year dissertation, establishing a producer at the studio as my client. 
-                It is being made in Unreal with C++.
-                <br><br>I will be creating and developing many aspects of the player controller, and I will be doing this to the design laid out by the client.
             </div>
 
         </div>
@@ -150,20 +135,95 @@
 
         </div>
 
-        <div class="ProjectDescription"> <!-- Current Task -->
+        <div class="ProjectDescription"> <!-- Noteworthy Contributions -->
             
             <div class="ProjectSectionTitle">
-                <b>Current Task:</b> Researching design inspirations
+                Noteworthy Contributions
             </div>
 
             <div class="ProjectText">
                 <ul>
-                    <li>As my first act in this project, I will attempt to get a clearer image of what Port in the Storm is looking for specifically.</li>
-                    <li>I will do this through familiarising myself with the design document they have shared with me, researching the development of important inspirations (God of War 2018, Dark Souls), and communicating with the client directly.</li>
-                    <li>Having already discussed design with the client, I have come to understand that the current plans are fluid. Understanding this I will continue my research knowing that I may have some room to prototype any future technical or design choices.</li>
+                    <li>I aimed to fulfilled the requirements given by the client, which included:
+                        <br>Advanced movement code<br>Light/Heavy attacks with hit registration<br>Camera mechanics
+                    </li>
+                    <li>I included UI which shows off debug information for the clients benefit.</li>
+                    <li>I created <b>documentation</b> based off my code for the client.</li>
                 </ul>
             </div>
 
+        </div>
+
+        <div class="ProjectDescription"> <!-- Developed Skills -->
+            
+            <div class="ProjectSectionTitle">
+                Developed Skills
+            </div>
+
+            <div class="ProjectText">
+                <ul>
+                    <li>This was another project <b>Unreal engine</b>, and I have further developed my skills using the software, as well as <b>C++</b>.</li>
+                    <li>Communicating with a <b>client</b> and adapting to feedback helped me develop a more professional workflow.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    <div class="ProjectDescription"> <!-- Project description -->
+            
+            <div class="ProjectSectionTitle">
+                Project Description
+            </div>
+
+            <div class="ProjectText">
+                Heavy Lies the Crown is a roguelike adventure game being developed and produced by Port in the Storm, my university's in-house studio. 
+                I joined this project so I could use it as the subject of my final year dissertation, establishing a producer at the studio as my client. 
+                It was made with Unreal with C++.
+                <br><br>I fulfilled the requirements laid out by the client, which involved creating the framework of a player controller, and associated documentation.
+            </div>
+
+        </div>
+        
+
+        <div class="ProjectDescription"> <!-- Current Task -->
+            
+            <div class="ProjectSectionTitle">
+                <b>Mechanic Demonstration</b>
+            </div>
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1083515858?h=e8672ebe76&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Heavy Lies the Crown mechanic demonstration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+            <div class="ProjectText">
+                At the clients suggestion, the project was built off of the 3rd person template provided by Unreal Engine. The major mechanics are:<br>
+                <ul>
+                    <li><b>Movement:</b> The user has two movement modes, which affect the speed of walking and running, the camera's position, and the abilities usable by the player. Additionally, the user can dodge in the facing direction.</li>
+                    <br><li><b>Combat:</b> The user can perform a light and heavy attack, which each has their own combo strings of differing length and timing. Attacks can be buffered if an input is recieved too early. The user can also block.</li>
+                    <br><li><b>Camera:</b> The camera can be repositioned to face the direction of the player. If an enemy is in front of the camera, the player can lock onto them, which will constantly rotate the camera to keep the subject in focus until the lock-on is cancelled.
+                    <br><br>Additionally, the user can swap the subject of the lock-on to a nearby enemy by checking in to the left of right of the current subject.</li>
+                    <br><li><b>Hit Registration:</b> The light and heavy attacks have seperate attack ranges, and if either intersect with an enemy, it is recognised and a sound is played.</li>
+                    <br><li><b>Debug:</b> Included in the project is UI that displays additional debug information for the clients benefit. Alongside this is instructions for using additional control schemes.</li>
+                </ul>
+                <br><b>Developing this further</b>, there are some mechanics that could have recieved more attention. The dodging mechanic is quite simple, being physics-based, but I could given it more control so it was less of a slide.
+            </div>
+
+                        <div class="ProjectSectionTitle">
+                Click the icons below to view the C++ and documentation, or blueprint code
+            </div>
+
+                        <div class="ProjectLinks">
+
+                <div class="Link">
+                    <a href="https://github.com/Morganikarp/HLtCwork/blob/main/HLtC_CombatSystem%20documentation.pdf" target=_blank alt="Github link">
+                    <img src="/Images/Misc/GithubLogo.png" height="40" alt="Github" title="Github">
+                    </a>
+                </div>
+
+                <div class="Link">
+                    <a href="Blueprints/HLtC.html" alt="Blueprint link">
+                    <img src="/Images/Misc/UnrealLogo.png" height="40" alt="Blueprints" title="Blueprints">
+                    </a>
+                </div>
+                
+            </div>
         </div>
         
     </div> <!-- Content End -->

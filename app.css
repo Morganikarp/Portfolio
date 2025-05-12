@@ -199,6 +199,14 @@ body{
     background-color: #e46295;
 }
 
+.Tag_PS5{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #67837f;
+}
+
 .Tag_CS{
     display: inline-block;
     padding: inherit;
