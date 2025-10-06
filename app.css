@@ -199,6 +199,14 @@ body{
     background-color: #e46295;
 }
 
+.Tag_VR{
+    display: inline-block;
+    padding: inherit;
+
+    border-radius: inherit;
+    background-color: #488107;
+}
+
 .Tag_PS5{
     display: inline-block;
     padding: inherit;
